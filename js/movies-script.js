@@ -56,3 +56,10 @@ const movies = [
     url: "https://www.imdb.com/title/tt1396484/",
   },
 ];
+
+// variabler som peger på de oprettede HTML-elementerne
+
+const moviesContainer = document.querySelector("#exhibition-container");
+const selectedCategory = document.querySelector("#category-select");
+const searchInput = document.querySelector("#gsearch");
+const form = document.querySelector("form");

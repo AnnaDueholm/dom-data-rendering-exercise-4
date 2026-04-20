@@ -92,3 +92,10 @@ function displayMovies(movieList){
 }
 // Her kalder jeg funktionen og sender hele movies-arrayet med ind som argument
 displayMovies(movies);
+
+//funktionen til at filtrer filmene oprettes 
+function filterMovies() {
+const selectedValue = selectedCategory.value;
+const searchTerm = searchInput.value.toLowerCase().trim()
+
+}

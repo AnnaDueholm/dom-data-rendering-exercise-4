@@ -68,8 +68,22 @@ const form = document.querySelector("form");
 function displayMovies(movieList){
 const html = movieList
   .map((movie) => {
+    //Her opbygges et nyt array (liste) med map() baseret på vores movies-array (liste)
     return `
-        <article></article>
+        <article>
+         <h2>${movie.titel}</h2>
+    <ul>
+        <li>Genre: ${movie.genre}</li>
+        <li>År: ${movie.year} </li>
+        <li>Varighed: ${movie.duration}</li>
+    </ul>
+    <figure>
+        <a href="${movie.url}" target="_blank" rel="noopener noreferrer">
+            <img src="${movie.img}" alt="${movie.titel}">
+        </a>
+        <figcaption>Læs mere på IMDB</figcaption>
+    </figure>
+        </article>
     `;
   })
   .join("");

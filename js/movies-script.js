@@ -98,4 +98,13 @@ function filterMovies() {
 const selectedValue = selectedCategory.value;
 const searchTerm = searchInput.value.toLowerCase().trim()
 
+let filteredMovies = movies;
+
+if (selectedValue != "All") {
+    filteredMovies = filteredMovies.filter((movie)=> {
+        return movie.genre === selectedValue;
+    }); 
+}
+
+
 }

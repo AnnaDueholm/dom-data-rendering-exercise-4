@@ -111,4 +111,10 @@ if (searchTerm !="" ) {
 });
 
 }
+displayMovies(movies);
 }
+
+//der sættes addEventListener på variablerne, som lytter efter om værdien i dropdown-menuen ændrer sig og 
+// når der sker ændringer i søgefeltet 
+selectedCategory.addEventListener("change", filterMovies)
+searchInput.addEventListener("input", filterMovies);

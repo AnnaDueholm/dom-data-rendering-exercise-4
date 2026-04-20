@@ -63,3 +63,15 @@ const moviesContainer = document.querySelector("#exhibition-container");
 const selectedCategory = document.querySelector("#category-select");
 const searchInput = document.querySelector("#gsearch");
 const form = document.querySelector("form");
+
+//funktion oprettes for at kunne vise filmene 
+function displayMovies(movieList){
+const html = movieList
+  .map((movie) => {
+    return `
+        <article></article>
+    `;
+  })
+  .join("");
+    
+}

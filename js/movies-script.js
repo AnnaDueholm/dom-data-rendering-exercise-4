@@ -66,10 +66,10 @@ const form = document.querySelector("form");
 
 //funktion oprettes for at kunne vise filmene 
 function displayMovies(movieList){
-const html = movieList
-  .map((movie) => {
-    //Her opbygges et nyt array (liste) med map() baseret på vores movies-array (liste)
-    return `
+  const html = movieList
+    .map((movie) => {
+      //Her opbygges et nyt array (liste) med map() baseret på vores movies-array (liste)
+      return `
         <article>
          <h2>${movie.titel}</h2>
     <ul>
@@ -85,7 +85,10 @@ const html = movieList
     </figure>
         </article>
     `;
-  })
-  .join("");
-    
+    })
+    .join(""); //Her samler jeg det hele med join("") til en samlet HTML-streng
+
+  moviesContainer.innerHTML = html;
 }
+// Her kalder jeg funktionen og sender hele movies-arrayet med ind som argument
+displayMovies(movies);

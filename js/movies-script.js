@@ -1,14 +1,5 @@
 "use strict";
 const movies = [
-  {
-    id: 1,
-    titel: "Inception",
-    genre: "science-fiction",
-    year: 2010,
-    duration: 2.28,
-    img: "img/inception.webp",
-    url: "https://www.imdb.com/title/tt1375666/",
-  },
 
   {
     id: 1,
@@ -111,7 +102,7 @@ if (searchTerm !="" ) {
 });
 
 }
-displayMovies(movies);
+displayMovies(filteredMovies);
 }
 
 //der sættes addEventListener på variablerne, som lytter efter om værdien i dropdown-menuen ændrer sig og 

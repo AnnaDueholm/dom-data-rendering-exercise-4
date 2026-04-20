@@ -50,7 +50,7 @@ const movies = [
 
 // variabler som peger på de oprettede HTML-elementerne
 
-const moviesContainer = document.querySelector("#exhibition-container");
+const moviesContainer = document.querySelector("#movies-container");
 const selectedCategory = document.querySelector("#category-select");
 const searchInput = document.querySelector("#gsearch");
 const form = document.querySelector("form");

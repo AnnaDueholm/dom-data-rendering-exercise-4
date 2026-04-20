@@ -105,6 +105,10 @@ if (selectedValue != "All") {
         return movie.genre === selectedValue;
     }); 
 }
+if (searchTerm !="" ) {
+    filteredMovies = filteredMovies.filter((movie)=> {
+    return movie.titel.toLowerCase().includes(searchTerm);    
+});
 
-
+}
 }

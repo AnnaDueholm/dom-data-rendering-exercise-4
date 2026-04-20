@@ -118,3 +118,9 @@ displayMovies(movies);
 // når der sker ændringer i søgefeltet 
 selectedCategory.addEventListener("change", filterMovies)
 searchInput.addEventListener("input", filterMovies);
+
+//Undgå at siden reloader ved submit
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  filterMovies();
+});
